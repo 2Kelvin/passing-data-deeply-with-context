@@ -4,7 +4,7 @@ import Section from "./Section.js";
 function Page() {
   return React.createElement(
     Section,
-    { level: 1 },
+    null,
     React.createElement(
       Heading,
       null,
@@ -12,7 +12,7 @@ function Page() {
     ),
     React.createElement(
       Section,
-      { level: 2 },
+      null,
       React.createElement(
         Heading,
         null,
@@ -30,7 +30,7 @@ function Page() {
       ),
       React.createElement(
         Section,
-        { level: 3 },
+        null,
         React.createElement(
           Heading,
           null,
@@ -48,7 +48,7 @@ function Page() {
         ),
         React.createElement(
           Section,
-          { level: 4 },
+          null,
           React.createElement(
             Heading,
             null,

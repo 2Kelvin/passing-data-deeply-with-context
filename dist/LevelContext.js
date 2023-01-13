@@ -1,1 +1,1 @@
-export const LevelContext = React.createContext(1);
+export const LevelContext = React.createContext(0);

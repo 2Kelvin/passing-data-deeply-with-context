@@ -6,6 +6,8 @@ export default function Heading(_ref) {
   var level = React.useContext(LevelContext);
 
   switch (level) {
+    case 0:
+      throw Error("Heading must be inside a Section!");
     case 1:
       return React.createElement(
         "h1",

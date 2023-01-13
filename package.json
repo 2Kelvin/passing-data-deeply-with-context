@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tailwindscan": "tailwindcss -i ./input.css -o ./dist/output.css --watch",
-    "babelwatch": "babel --watch src --out-dir . --presets react-app/prod"
+    "babelwatch": "babel --watch src --out-dir ./dist/ --presets react-app/prod"
   },
   "repository": {
     "type": "git",

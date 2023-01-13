@@ -1,7 +1,9 @@
-export default function Section({ children }) {
+import { LevelContext } from "../dist/LevelContext.js";
+
+export default function Section({ level, children }) {
   return (
-    <section className="border border-slate-600 rounded-md px-1 py-3">
-      {children}
+    <section className="border border-slate-200 rounded-md p-6 shadow-md w-fit">
+      <LevelContext.Provider value={level}>{children}</LevelContext.Provider>
     </section>
   );
 }

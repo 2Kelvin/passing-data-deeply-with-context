@@ -4,42 +4,78 @@ import Section from "./Section.js";
 function Page() {
   return React.createElement(
     Section,
-    null,
+    { level: 1 },
     React.createElement(
       Heading,
-      { level: 1 },
+      null,
       "Title"
     ),
     React.createElement(
-      Heading,
+      Section,
       { level: 2 },
-      "Heading"
-    ),
-    React.createElement(
-      Heading,
-      { level: 3 },
-      "Sub-heading"
-    ),
-    React.createElement(
-      Heading,
-      { level: 4 },
-      "Sub-sub-heading"
-    ),
-    React.createElement(
-      Heading,
-      { level: 5 },
-      "Sub-sub-sub-heading"
-    ),
-    React.createElement(
-      Heading,
-      { level: 6 },
-      "Sub-sub-sub-sub-heading"
+      React.createElement(
+        Heading,
+        null,
+        "Heading"
+      ),
+      React.createElement(
+        Heading,
+        null,
+        "Heading"
+      ),
+      React.createElement(
+        Heading,
+        null,
+        "Heading"
+      ),
+      React.createElement(
+        Section,
+        { level: 3 },
+        React.createElement(
+          Heading,
+          null,
+          "Sub-heading"
+        ),
+        React.createElement(
+          Heading,
+          null,
+          "Sub-heading"
+        ),
+        React.createElement(
+          Heading,
+          null,
+          "Sub-heading"
+        ),
+        React.createElement(
+          Section,
+          { level: 4 },
+          React.createElement(
+            Heading,
+            null,
+            "Sub-sub-heading"
+          ),
+          React.createElement(
+            Heading,
+            null,
+            "Sub-sub-heading"
+          ),
+          React.createElement(
+            Heading,
+            null,
+            "Sub-sub-heading"
+          )
+        )
+      )
     )
   );
 }
 
 export default function App() {
-  return React.createElement(Page, null);
+  return React.createElement(
+    "div",
+    { className: "grid place-content-center h-screen" },
+    React.createElement(Page, null)
+  );
 }
 
 var root = ReactDOM.createRoot(document.getElementById("rootNode"));

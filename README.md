@@ -1,5 +1,7 @@
 # passing-data-deeply-with-context
 
+![useContext](https://user-images.githubusercontent.com/85868026/212334983-4bb0d976-a645-4474-8f31-bae7af6e7694.png)
+
 In this documentation read, I learnt:
 
 - `Context` allows a parent component to make data accessible to all its children (no matter how deeply nested they are) without passing it down through props

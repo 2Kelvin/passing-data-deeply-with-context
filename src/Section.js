@@ -5,7 +5,7 @@ export default function Section({ children }) {
   const level = React.useContext(LevelContext);
 
   return (
-    <section className="border border-slate-200 rounded-md p-6 shadow-md w-fit">
+    <section className="border border-slate-200 rounded-xl m-4 first-of-type:mt-9 p-3 pb-6 shadow-lg w-fit bg-teal-100">
       <LevelContext.Provider value={level + 1}>
         {children}
       </LevelContext.Provider>

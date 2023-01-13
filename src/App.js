@@ -1,33 +1,24 @@
+import AllPosts from "./AllPosts.js";
 import Heading from "./Heading.js";
+import Post from "./Post.js";
 import Section from "./Section.js";
 
-function Page() {
+function ProfilePage() {
   return (
-    <Section>
-      <Heading>Title</Heading>
+    <div className="m-auto w-fit">
       <Section>
-        <Heading>Heading</Heading>
-        <Heading>Heading</Heading>
-        <Heading>Heading</Heading>
-        <Section>
-          <Heading>Sub-heading</Heading>
-          <Heading>Sub-heading</Heading>
-          <Heading>Sub-heading</Heading>
-          <Section>
-            <Heading>Sub-sub-heading</Heading>
-            <Heading>Sub-sub-heading</Heading>
-            <Heading>Sub-sub-heading</Heading>
-          </Section>
-        </Section>
+        <Heading>My Profile</Heading>
+        <Post title="Hello Traveller" body="Read about my adventure" />
+        <AllPosts />
       </Section>
-    </Section>
+    </div>
   );
 }
 
 export default function App() {
   return (
-    <div className="grid place-content-center h-screen">
-      <Page />
+    <div className="h-screen">
+      <ProfilePage />
     </div>
   );
 }

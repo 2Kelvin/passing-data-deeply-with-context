@@ -16,5 +16,9 @@ In this documentation read, I learnt:
   - [x] **import useContext() hook into your component & pass it your Context variable.** _const age = useContext(AgeContext)_. Then remove the prop from the component to its parent / ancestor component
   - [x] **wrap your parent component's childdren with \***<YourContext.Provider value={Context}></YourContext.Provider>**\* to provide the Context data.** _<AgeContext.Provider value={age}> {children} </AgeContext.Provider>_
 - you can have as many components as possible between the parent component that provides Context and the child component that uses it
+- Context lets you write components that adapt to their sorroundings & display themselves differently depending in which context they're being rendered
+- Child components using Context **_inherit_** from their parent components. The only way to `override` Context is to **_wrap the components with a Context Provider with a different value_**
+- each context created using _createContext_ is an independent context. Different react contexts don't override each other i.e. like the way in css color cannot override background-color
+- a component can use or provide different contexts
 
 :star:**Pro tip**: The **_src_** scripts linked in the html file **_point to the javascript files that have been converted from React to plain javascript_**

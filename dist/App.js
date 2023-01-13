@@ -1,71 +1,22 @@
+import AllPosts from "./AllPosts.js";
 import Heading from "./Heading.js";
+import Post from "./Post.js";
 import Section from "./Section.js";
 
-function Page() {
+function ProfilePage() {
   return React.createElement(
-    Section,
-    null,
-    React.createElement(
-      Heading,
-      null,
-      "Title"
-    ),
+    "div",
+    { className: "m-auto w-fit" },
     React.createElement(
       Section,
       null,
       React.createElement(
         Heading,
         null,
-        "Heading"
+        "My Profile"
       ),
-      React.createElement(
-        Heading,
-        null,
-        "Heading"
-      ),
-      React.createElement(
-        Heading,
-        null,
-        "Heading"
-      ),
-      React.createElement(
-        Section,
-        null,
-        React.createElement(
-          Heading,
-          null,
-          "Sub-heading"
-        ),
-        React.createElement(
-          Heading,
-          null,
-          "Sub-heading"
-        ),
-        React.createElement(
-          Heading,
-          null,
-          "Sub-heading"
-        ),
-        React.createElement(
-          Section,
-          null,
-          React.createElement(
-            Heading,
-            null,
-            "Sub-sub-heading"
-          ),
-          React.createElement(
-            Heading,
-            null,
-            "Sub-sub-heading"
-          ),
-          React.createElement(
-            Heading,
-            null,
-            "Sub-sub-heading"
-          )
-        )
-      )
+      React.createElement(Post, { title: "Hello Traveller", body: "Read about my adventure" }),
+      React.createElement(AllPosts, null)
     )
   );
 }
@@ -73,8 +24,8 @@ function Page() {
 export default function App() {
   return React.createElement(
     "div",
-    { className: "grid place-content-center h-screen" },
-    React.createElement(Page, null)
+    { className: "h-screen" },
+    React.createElement(ProfilePage, null)
   );
 }
 

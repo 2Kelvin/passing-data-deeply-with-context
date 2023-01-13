@@ -22,5 +22,11 @@ In this documentation read, I learnt:
 - Child components using Context **_inherit_** from their parent components. The only way to `override` Context is to **_wrap the components with a Context Provider with a different value_**
 - each context created using _createContext_ is an independent context. Different react contexts don't override each other i.e. like the way in css color cannot override background-color
 - a component can use or provide different contexts
+- inn general, use Context for distant components in different parts of the UI tree that require some specific data / info
+- examples of UIs that might need Cnntext:
+  - **Theming** (apps with dark mode toggle)
+  - **Account loggin web apps** (tailors UI as per a user account)
+  - **Routing**
+  - **Large projects** (with a lot state)
 
 :star:**Pro tip**: The **_src_** scripts linked in the html file **_point to the javascript files that have been converted from React to plain javascript_**

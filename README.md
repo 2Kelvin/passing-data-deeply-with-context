@@ -23,7 +23,7 @@ In this documentation read, I learnt:
 - each context created using _createContext_ is an independent context. Different react contexts don't override each other i.e. like the way in css color cannot override background-color
 - a component can use or provide different contexts
 - inn general, use Context for distant components in different parts of the UI tree that require some specific data / info
-- examples of UIs that might need Cnntext:
+- examples of UIs that might need Context:
   - **Theming** (apps with dark mode toggle)
   - **Account loggin web apps** (tailors UI as per a user account)
   - **Routing**
